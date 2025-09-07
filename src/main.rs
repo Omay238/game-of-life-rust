@@ -1,7 +1,7 @@
 use std::{thread, time};
 
 fn main() {
-    let rule_string = "B2/S0";
+    let rule_string = "B3/S23";
 
     let mut world: Vec<Vec<bool>> = Vec::new();
     let width: usize = 256;
