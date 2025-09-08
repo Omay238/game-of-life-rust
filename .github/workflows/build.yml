@@ -46,8 +46,10 @@ jobs:
           choco install -y wget
           wget https://github.com/libsdl-org/SDL/releases/download/release-2.32.8/SDL2-devel-2.32.8-VC.zip
           Expand-Archive SDL2-devel-2.32.8-VC.zip SDL2-devel-2.32.8-VC
-          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.lib .
-          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.dll .
+          dir
+          dir SDL2-devel-2.32.8-VC
+          mv SDL2-devel-2.32.8-VC\lib\x64\SDL2.lib .
+          mv SDL2-devel-2.32.8-VC\lib\x64\SDL2.dll .
 
       - name: Build
         run: |
