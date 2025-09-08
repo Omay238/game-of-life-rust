@@ -39,19 +39,6 @@ jobs:
         run: |
           brew install sdl2 sdl2_image
 
-      - name: Install SDL2 (Windows)
-        if: matrix.os == 'windows-latest'
-        shell: pwsh
-        run: |
-          choco install -y wget
-          wget https://github.com/libsdl-org/SDL/releases/download/release-2.32.8/SDL2-devel-2.32.8-VC.zip
-          Expand-Archive SDL2-devel-2.32.8-VC.zip SDL2-devel-2.32.8-VC
-          dir
-          dir SDL2-devel-2.32.8-VC
-          dir SDL2-devel-2.32.8-VC\SDL-2.32.8
-          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.lib .
-          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.dll .
-
       - name: Build
         run: |
           export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib" >> ~/.zshenv
