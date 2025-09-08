@@ -37,7 +37,6 @@ jobs:
       - name: Install SDL2 (macOS)
         if: matrix.os == 'macos-latest'
         run: |
-          echo export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib" >> ~/.zshenv
           brew install sdl2 sdl2_image
 
       - name: Install SDL2 (Windows)
@@ -50,7 +49,9 @@ jobs:
           mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.dll .
 
       - name: Build
-        run: cargo build --release --target ${{ matrix.target }}
+        run: |
+          export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib" >> ~/.zshenv
+          cargo build --release --target ${{ matrix.target }}
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
