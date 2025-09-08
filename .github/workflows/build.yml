@@ -48,8 +48,9 @@ jobs:
           Expand-Archive SDL2-devel-2.32.8-VC.zip SDL2-devel-2.32.8-VC
           dir
           dir SDL2-devel-2.32.8-VC
-          mv SDL2-devel-2.32.8-VC\lib\x64\SDL2.lib .
-          mv SDL2-devel-2.32.8-VC\lib\x64\SDL2.dll .
+          dir SDL2-devel-2.32.8-VC\SDL-2.32.8
+          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.lib .
+          mv SDL2-devel-2.32.8-VC\SDL-2.32.8\lib\x64\SDL2.dll .
 
       - name: Build
         run: |
