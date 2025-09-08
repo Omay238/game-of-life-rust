@@ -40,8 +40,9 @@ jobs:
           brew install sdl2 sdl2_image
 
       - name: Build
+        shell: bash
         run: |
-          export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib" >> ~/.zshenv
+          export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
           cargo build --release --target ${{ matrix.target }}
 
       - name: Upload Artifact
