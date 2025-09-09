@@ -1,5 +1,13 @@
 # Rusty Life
 
+[Windows](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/windows-latest.zip)  
+[Linux](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/ubuntu-latest.zip)  
+[macOS](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/macos-latest.zip)
+
+WASD to move, E to zoom in, Q to zoom out  
+Left click to place cell, right click to remove cell  
+Space to pause/unpause.
+
 Conway's game of life written in Rust.
 This project serves for me to learn some basics of Rust, and to submit for Hack Club Siege!
 
