@@ -1,8 +1,8 @@
 # Rusty Life
 
 [Windows](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/windows-latest.zip)  
-[Linux](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/ubuntu-latest.zip)  
-[macOS](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/macos-latest.zip)
+[Linux](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/ubuntu-latest)  
+[macOS](https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/macos-latest)
 
 WASD to move, E to zoom in, Q to zoom out  
 Left click to place cell, right click to remove cell  
