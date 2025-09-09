@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rusty Life</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                line-height: 1.6;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #333;
+            }
+
+            h1, h2, h3 {
+                color: #333;
+                margin-top: 1.5em;
+                margin-bottom: 0.5em;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            code {
+                background: #f4f4f4;
+                padding: 2px 4px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+            }
+
+            pre {
+                background: #f4f4f4;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-x: auto;
+                font-family: 'Courier New', monospace;
+                line-height: 1.4;
+            }
+
+            blockquote {
+                border-left: 4px solid #ddd;
+                margin: 1em 0;
+                padding-left: 20px;
+                color: #666;
+                font-style: italic;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 1em 0;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f5f5f5;
+                font-weight: bold;
+            }
+
+            ul, ol {
+                margin: 1em 0;
+                padding-left: 2em;
+            }
+
+            li {
+                margin: 0.5em 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rusty Life</h1>
+        <p><a href="https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/windows-latest.zip">Windows</a><br><a
+                href="https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/ubuntu-latest.zip">Linux</a><br><a
+                href="https://github.com/Omay238/game-of-life-rust/releases/download/0.1.0/macos-latest.zip">macOS</a></p>
+        <p>WASD to move, E to zoom in, Q to zoom out<br>Left click to place cell, right click to remove cell<br>Space to
+            pause/unpause.</p>
+        <p>Conway&#39;s game of life written in Rust.
+            This project serves for me to learn some basics of Rust, and to submit for Hack Club Siege!</p>
+        <p>It&#39;s currently a work in progress, but it has a GUI using simple, and functions fairly fast.</p>
+        <p>I plan to implement algorithms for it such as HashLife and QuickLife, but they are too complicated to get an
+            understanding of and complete in four hours.</p>
+        <h2>Examples</h2>
+        <img src="readme/image.png" alt="screenshot">
+        <video width="320" height="240" controls>
+            <source src="readme/recording.mov" type="video/mp4">
+        </video>
+    </body>
+</html>

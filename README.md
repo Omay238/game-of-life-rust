@@ -17,7 +17,7 @@ I plan to implement algorithms for it such as HashLife and QuickLife, but they a
 
 ## Examples
 
-![screenshot](readme/image.png)
+![screenshot](_site/readme/image.png)
 <video width="320" height="240" controls>
-  <source src="readme/recording.mov" type="video/mp4">
+  <source src="_site/readme/recording.mov" type="video/mp4">
 </video>
